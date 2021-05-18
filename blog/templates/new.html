@@ -43,10 +43,11 @@
             </div>
           </nav>
 
-        <form action="{% url 'create'%}" method="post">
+        <form action="{% url 'create'%}" method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <p>제목:<input type="text" name="title" class="title"></p>
             <p>작성자:<input type="text" name="writer" class="writer"></p>
+            <p>사진:<input type="file" name="image" class="image"></p>
             본문:<textarea type="text" name="body" id="" cols="30" rows="10" class="body"></textarea>
             <button type="submit">제출</button>
         </form>
