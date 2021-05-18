@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Blog
-from .models import Post
 from django.utils import timezone
 
 # Create your views here.
@@ -14,8 +13,8 @@ def detail(request, id):
     return render(request, 'detail.html',{'details': details})
 
 def index(request):
-    posts = Post.objects.all()
-    return render(request, 'index.html',{'posts': posts,})
+    blogs = Blog.objects.all()
+    return render(request, 'index.html',{'blogs': blogs})
 
 def about_me(request):
     return render(request, 'about_me.html')

@@ -16,16 +16,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import blog.views
+import portfolio.views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',blog.views.home, name="home"),
     path('blog/<str:id>',blog.views.detail, name="detail"),
-    path('blog/',blog.views.index, name="index"),
+    path('index/',blog.views.index, name="index"),
     path('about_me/',blog.views.about_me, name="about_me"),
     path('delete/<str:id>',blog.views.delete, name="delete"),
     path('create/',blog.views.create,name="create"),
     path('edit/<str:id>',blog.views.edit,name="edit"),
     path('update/<str:id>',blog.views.update,name="update"),
     path('new/',blog.views.new, name="new"),
+    path('portfolio/', portfolio.views.portfolio, name="portfolio"),
 ]
+

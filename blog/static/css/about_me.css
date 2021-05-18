@@ -1,0 +1,58 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	
+  
+  }
+  
+  .body {
+	background-color: #E5DED4;
+  }
+
+  .navbar{
+    background-color: #354356;
+}
+
+.nav-link{
+    color: #C3DBE3;
+}
+
+  .navbar-brand{
+  color: #C3DBE3;
+}
+
+header{
+  text-align: center;
+  background-color: darkslategrey;
+  color: white;
+}
+
+.introduce p{
+  padding: 10px;
+  border-style: solid;
+  border-color: darkslategrey;
+}
+
+.favorite div{
+  display: inline-block;
+  padding: 10px;
+ 
+  
+}
+.favorite li{
+  padding:10px;
+
+}
+
+.favorite img{
+  width: 196px;
+  height: 130px;
+ 
+
+}
+.future {
+  padding: 0px;
+  border-style: solid;
+  border-color: darkslategrey;
+}

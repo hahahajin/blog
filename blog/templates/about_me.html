@@ -1,11 +1,87 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ko">
     <head>
-        <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/about_me.css' %}">
         <title>자기소개</title>
     </head>
 
-    <body>
-        <h3>양하진 입니다</h3>
+    <body class="body">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">MENU</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">index</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about_me' %}">introduce</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'new' %}">write</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">sign up</a>
+                  </li>
+                </ul>
+                <span class="navbar-text">
+                  
+                </span>
+              </div>
+            </div>
+          </nav>
+      
+          <header>
+            <h1>HELLO🤗</h1>
+        </header>
+        <section class="introduce">
+            <h3>1. 자기 소개</h3>
+           <P>
+               안녕하세요! 파이버융합소재공학전공 20학번 21살 양하진입니다.
+               저는 비전공자이지만 코딩을 하고 싶다는 생각을 가지게 되어 코딩에 대해 배우고 관련된 다양한 활동들을 해보고 싶어 멋사에 참여하게 되었습니다.
+               앞으로 많이 배우고 싶고, 잘 하지는 못하지만 제가 할 수 있는 최선을 다해 열심히 하겠습니다! 잘 부탁드립니다 😊😊😊
+           </P>   
+        </section>
+        <section class="favorite">
+            
+            <h3>2. 좋아하는 것들</h3>
+           <ui>
+               <div><li>드라마,예능보기👀</li>
+                <img src="{% static 'img/netflix.PNG' %}"></div>
+                <div><li>산책👟👟</li>
+                <img src="{% static 'img/walk.PNG' %}"></div>
+                <div><li>떡볶이🍴</li>
+                <img src="{% static 'img/tteok.PNG' %}"></div>
+                <div><li>찰리브라운😀</li>
+                <img src="{% static 'img/charlie.jpg' %}"></div>
+                <div><li>여행🛬</li>
+                <img src="{% static 'img/airplane.PNG' %}"></div>
+                
+                
+            </ui> 
+        </section>
+        <h3>3. 1년동안 목표</h3>
+        <section class="future">
+           
+           <div><h4>1.웹 개발 열심히 배우기</h4>
+           <p>멋사에서 활동을 하면서 1년동안 열심히 활동에 참여하여 많은 것들을 배우고 싶습니다.
+            지금은 이제 처음 배워나가는 것이어서 모르는 것이 많지만 1년 후에는 웹 개발을 이해하고 조금이나마 스스로 할 수 있는 능력을 가지는 것이 목표입니다.
+           </p></div>
+           <div><h4>2.새로운 사람들 많이 만나기</h4>
+        <p>작년에 대학에 입학했지만, 코로나로 학교 생활도 거의 못하고 집에만 있어 새로운 사람들을 만나지 못했었는데, 올 한해 새로운 사람들을 많이 만나보고 많은 것들을 경험해보고 싶습니다.</p></div>
+        </section>
+
     </body>
 </html>

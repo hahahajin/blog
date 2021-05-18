@@ -1,0 +1,23 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	
+  
+  }
+  
+  .body {
+	background-color: #E5DED4;
+  }
+
+  .navbar{
+    background-color: #354356;
+}
+
+.nav-link{
+    color: #C3DBE3;
+}
+
+.navbar-brand{
+  color: #C3DBE3;
+}
