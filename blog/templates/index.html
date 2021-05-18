@@ -48,7 +48,7 @@
         {% for blog in blogs.all%}
         <!-- Blog post-->
         <div class="card mb-4">
-          <img class="card-img-top" src="{% static 'img/charlie.jpg' %}" alt="Card image cap" />
+          <img class="card-img-top" src="{{ blog.image.url}}" alt="Card image cap" />
           <div class="card-body">
               <h2 class="card-title">{{blog.title}}</h2>
               <p class="card-text">{{blog.summary}}</p>
