@@ -50,6 +50,11 @@
                 <!-- Author-->
                 <p class="lead">
                     by {{details.writer}}
+                    <hr>
+                    <a class="btn btn-primary" href="{% url 'edit' details.id %}" role="button">수정하기</a>
+                    <a class="btn btn-primary" href="{% url 'delete' details.id %}" role="button">삭제하기</a>
+                    
+                        
                 </p>
                 <hr />
                 <!-- Date and time-->
@@ -59,18 +64,11 @@
                 <img class="img-fluid rounded" src="{{details.image.url}}" alt="..." />
                 <hr />
                 <!-- Post content-->
-                <p class="lead">{{details.body}}</p>
+                <p class="content">{{details.body}}</p>
                 
                 <hr />
           
-          <div class="btn">
-            <a href="{% url 'edit' details.id %}">
-              <button>수정하기</button>
-            </a>
-            <div class="btn">
-              <a href="{% url 'delete' details.id %}">
-                <button>삭제하기</button>
-              </a>
+                
           
     </body>
 </html>
