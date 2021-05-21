@@ -1,3 +1,9 @@
+:root{
+  --background-color: #ffffff;
+  --point-color: #354356;
+  
+}
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -7,19 +13,19 @@
   }
   
   .body {
-	background-color: #E5DED4;
+	background-color: var(--background-color);
   }
 
   .navbar{
-    background-color: #354356;
+    background-color: var(--point-color);
 }
 
 .nav-link{
-    color: #C3DBE3;
+    color: var(--background-color);
 }
 
 .navbar-brand{
-  color: #C3DBE3;
+  color: var(--background-color);
 }
 
 .name{
@@ -34,5 +40,5 @@
 }
 
 .btn{
-  background-color: #354356;
+  background-color: var(--point-color);
 }
