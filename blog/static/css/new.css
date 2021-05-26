@@ -12,18 +12,4 @@
   
   }
   
-  .body {
-	background-color: var(--background-color);
-  }
-
-  .navbar{
-    background-color: var(--point-color);
-}
-
-.nav-link{
-    color: var(--background-color);
-}
-
-.navbar-brand{
-  color: var(--background-color);
-}
+ 

@@ -8,6 +8,7 @@ class Blog(models.Model):
     body = models.TextField()
     pub_date = models.DateTimeField()
     image = models. ImageField(upload_to = "blog/", blank = True, null = True)
+   
 
     def __str__(self):
         return f'[{self.pk}]{self.title}'
