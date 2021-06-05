@@ -49,3 +49,4 @@ def update(request, id):
     update_blog.pub_date = timezone.now()
     update_blog.save()
     return redirect('detail',update_blog.id)
+

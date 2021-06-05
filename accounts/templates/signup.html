@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<form action="." method="POST" class="loginForm">
+    {% csrf_token %}
+    <h1> Sign UP </h1>
+    <form>
+        Username:
+        <br>
+        <input name = "username" type ="text" value ="">
+        <br>
+        Password:
+        <br>
+        <input name = "password1" type ="password" value ="">
+        <br>
+        <input name = "password2" type ="password" value ="">
+        <br>
+        <br>
+        <input name = "btn-secondary" type ="submit" value ="Sign up!">
+    </form>
+    
+{% endblock %}
