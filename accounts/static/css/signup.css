@@ -1,0 +1,73 @@
+:root{
+    --background-color: #ffffff;
+    --point-color: #354356;
+    
+  }
+  
+  *{
+      margin: 0px;
+      padding: 0px;
+      text-decoration: none;
+      
+    
+    }
+
+.login {
+    background: var(--background-color);
+    height: auto;
+}
+
+.header {
+    height: auto;
+    padding: 10px 16px;
+    justify-content: center;
+    font-size: 18px;
+    background-color: var(--point-color);
+    color: var(--background-color);
+    text-align: center;
+}
+
+
+.loginForm {
+    background: var(--background-color);
+    border: 1px solid var(--point-color);
+    border-radius: 4px;
+    overflow: hidden;
+    width: 28em;
+    min-width: 300px;
+    margin: 100px auto;
+    height: auto;
+    padding: 0 0 10px;
+}
+
+.idForm {
+    padding: 4px 20px 4px;
+}
+
+.passForm{
+    padding: 4px 20px 4px;
+}
+
+.passCheck{
+    padding: 4px 20px 10px;
+}
+
+
+.user_id  {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pw{
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn{
+    background-color: var(--point-color);
+    margin-left: 180px;
+
+
+}

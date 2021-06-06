@@ -26,7 +26,7 @@
                 <div class="card mb-4">
                   <img class="card-img-top" src="{{ blog.image.url}}" alt="Card image cap" />
                   <div class="card-body">
-                      <h2 class="card-title">{{blog.title}}</h2>
+                      <h2 class="card-title"><b>{{blog.title}}</b></h2>
                       <p class="card-text">{{blog.summary}}</p>
                       <a class="btn btn-primary" href="{% url 'detail' blog.id %}">Read More →</a>
                   </div>

@@ -1,0 +1,49 @@
+:root{
+    --background-color: #ffffff;
+    --point-color: #354356;
+    
+  }
+  
+  *{
+      margin: 0px;
+      padding: 0px;
+      text-decoration: none;
+      
+    
+    }
+
+    .body {
+        background-color: var(--background-color);
+        
+      }
+    
+      .comment{
+        position:absolute;
+        width:500px;
+        height:300px;
+        padding: 0 0 10px;
+        background-color: var(--background-color);
+        border: 1px solid var(--point-color);
+        border-radius: 4px;
+        text-align:center;
+        margin: 100px 700px;
+        
+      }
+    
+      .btn{
+        background-color: var(--point-color);
+        color: var(--background-color);
+        width: 30%;
+        height: 15%;
+        margin-top: 20%;
+        font-size: large;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-right: 20px;
+        border:none;
+    
+      }
+    
+      .message{
+          margin-top: 15%;
+      }

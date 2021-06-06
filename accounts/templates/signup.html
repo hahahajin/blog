@@ -3,31 +3,31 @@
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/signup.css' %}">
 
-<form action="." method="POST" class="loginForm">
-    {% csrf_token %}
-    <h1> Sign UP </h1>
+<body class="login">
 
-        Username:
-        <br>
-        <div class="idForm">
-            <label for = "username"></label>
-            <input type="text" class="username" id = "username" placeholder="username" name = "username">
-          </div>
-        <br>
-        Password:
-        <br>
-        <div class="passForm">
-            <label for = "password"></label>
-            <input type="password" class="pw" id = "password" placeholder="password" name = "password">
-          </div>
-        <br>
-        <div class="passCheck">
-            <label for = "re-password"></label>
-            <input type="password" class="pw" id = "re-password" placeholder="re-password" name = "re-password">
-          </div>
-        <br>
-        <br>
-        <input name = "btn-secondary" type ="submit" value ="Sign up!">
-</form>
+
+  <form action="." method="post" class="loginForm">
+    {% csrf_token %}
+    <div class="header">
+      <h2>Sign up</h2>
+    </div>
+    <div class="idForm">
+      <label for = "user_id">아이디</label>
+      <input type="text" class="user_id" id = "user_id" placeholder="아이디를 입력해주세요" name = "user_id">
+    </div>
+    <div class="passForm">
+      <label for = "password">비밀번호</label>
+      <input type="password" class="pw" id = "password" placeholder="비밀번호를 입력해주세요" name = "password">
+    </div>
+    <div class="passCheck">
+      <label for = "re-password">비밀번호 확인</label>
+      <input type="password" class="pw" id = "re-password" placeholder="다시 한번 비밀번호를 입력해주세요" name = "re-password">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">
+      Sign up
+    </button>
+
+
     
 {% endblock %}

@@ -15,7 +15,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-left">
                   
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'index' %}">Home</a>
@@ -23,13 +23,15 @@
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'about_me' %}">About Me</a>
                   </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="{% url 'login' %}">login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="{% url 'signup' %}">sign up</a>
-                  </li>
+                </ul>
+                <ul class="navbar-nav navbar-rignt">
+                  {% if request.session.user %}
+                          <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">{{ request.session.user }}님 환영합니다. [로그아웃] </a></li>
+                      {% else %}
+                          
+                          <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">로그인</a></li>
+                          
+                      {% endif %}
                 
               </ul>
                 <span class="navbar-text">

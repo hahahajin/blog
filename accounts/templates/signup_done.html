@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/signup_done.css' %}" />
+<html>
+    <head>
+
+    </head>
+    <body class="body">
+        <div class="comment">
+        <h3 class="message">{{ message }}</h3>
+        <a href = "{% url 'login' %}"><button type="button" class="btn btn-primary">Go to login</button></a>
+        <a href = "{% url 'index' %}"><button type="button" class="btn btn-primary">Home</button></a>
+        
+    </div>
+    </body>
+
+{% endblock %}
