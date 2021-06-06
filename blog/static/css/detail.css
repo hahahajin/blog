@@ -13,13 +13,24 @@
   }
   
   
-
-
-.container{
-  text-align: center;
+.col-3{
+  display: block;
+  margin-top: 80px;
 }
+
+.col-9{
+  display: block;
+  margin-top: 20px;
+  
+}
+
 
 .btn{
   background-color: var(--point-color);
   text-align: right;
+}
+
+.card-header{
+  background-color: var(--point-color);
+  color: var(--background-color);
 }

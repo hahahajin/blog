@@ -1,23 +1,33 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/signup.css' %}">
 
 <form action="." method="POST" class="loginForm">
     {% csrf_token %}
     <h1> Sign UP </h1>
-    <form>
+
         Username:
         <br>
-        <input name = "username" type ="text" value ="">
+        <div class="idForm">
+            <label for = "username"></label>
+            <input type="text" class="username" id = "username" placeholder="username" name = "username">
+          </div>
         <br>
         Password:
         <br>
-        <input name = "password1" type ="password" value ="">
+        <div class="passForm">
+            <label for = "password"></label>
+            <input type="password" class="pw" id = "password" placeholder="password" name = "password">
+          </div>
         <br>
-        <input name = "password2" type ="password" value ="">
+        <div class="passCheck">
+            <label for = "re-password"></label>
+            <input type="password" class="pw" id = "re-password" placeholder="re-password" name = "re-password">
+          </div>
         <br>
         <br>
         <input name = "btn-secondary" type ="submit" value ="Sign up!">
-    </form>
+</form>
     
 {% endblock %}

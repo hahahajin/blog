@@ -12,4 +12,7 @@
   
   }
   
-  
+  .btn{
+    background-color: var(--point-color);
+    border: none;
+   }

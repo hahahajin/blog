@@ -22,7 +22,7 @@ def about_me(request):
 def delete(request, id):
     delete_blog = Blog.objects.get (id=id)
     delete_blog.delete()
-    return redirect('home')
+    return redirect('index')
 
 def new(request):
     return render (request, 'new.html')

@@ -12,19 +12,24 @@
   
   }
   
- 
+.up{
+  float: left;
+}
 
 .name{
   margin-left: 30px;
 }
 
 
-.card{
-  width: 50%;
-  margin-left: 30px;
-  
-}
+
 
 .btn{
   background-color: var(--point-color);
+  border: none;
+  
+}
+
+.card-header{
+  background-color: var(--point-color);
+  color: var(--background-color);
 }
