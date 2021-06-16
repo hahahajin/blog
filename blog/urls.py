@@ -12,4 +12,6 @@ urlpatterns = [
     path('edit/<str:id>',views.edit,name="edit"),
     path('update/<str:id>',views.update,name="update"),
     path('new/',views.new, name="new"),
+    
 ]
+

@@ -26,6 +26,11 @@
                 <div class="card mb-4">
                   <img class="card-img-top" src="{{ blog.image.url}}" alt="Card image cap" />
                   <div class="card-body">
+                    {% if p.category %}
+                        <span class="badge badge-secondary float-right">{{ p.category }}</span>
+                    {% else %}
+                        <span class="badge badge-secondary float-right">미분류</span>
+                    {% endif %}
                       <h2 class="card-title"><b>{{blog.title}}</b></h2>
                       <p class="card-text">{{blog.summary}}</p>
                       <a class="btn btn-primary" href="{% url 'detail' blog.id %}">Read More →</a>
@@ -53,19 +58,18 @@
                       <div class="card-body">
                           <div class="row">
                               <div class="col-lg-6">
-                                  <ul class="list-unstyled mb-0">
-                                      <li><a href="#!"></a></li>
-                                      <li><a href="#!"></a></li>
-                                      <li><a href="#!"></a></li>
-                                  </ul>
-                              </div>
-                              <div class="col-lg-6">
-                                  <ul class="list-unstyled mb-0">
-                                      <li><a href="#!"></a></li>
-                                      <li><a href="#!"></a></li>
-                                      <li><a href="#!"></a></li>
-                                  </ul>
-                              </div>
+                                <ul>
+                                    {% for category in categories %}
+                                        <li>
+                                            <a href="{{ category.get_absolute_url }}">{{ category }} ({{ category.post_set.count }})</a>
+                                        </li>
+                                    {% endfor %}
+                                    <li>
+                                        <a href="/blog/category/no_category/">미분류 ({{ no_category_post_count }})</a>
+                                    </li>
+                                </ul>
+        
+                                  
                           </div>
                       </div>
                   </div>
